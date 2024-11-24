@@ -1,0 +1,16 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.weather-info .row {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.weather-info .row p{
+  margin: 1.5rem;
+}
