@@ -11,6 +11,9 @@ function App() {
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((position) => {
       fetchWeatherData(position.coords.latitude.toString(), position.coords.longitude.toString());
+    }, () => {
+      // Default tokyo location
+      fetchWeatherData("35.6764", "139.6500");
     });
   }, []);
 

@@ -27,6 +27,7 @@ export interface LocationData {
     country: string
     name: string
     localtime_epoch: number
+    tz_id: string
 }
 
 const WeatherCard: React.FC<WeatherCardProps> = ({ weather_data, location_data }) => {
@@ -173,6 +174,7 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ weather_data, location_data }
                     hour: 'numeric',
                     hourCycle: 'h12',
                     minute: '2-digit',
+                    timeZone: location_data.tz_id
                 })}
             </label>
         </div>
